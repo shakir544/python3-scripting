@@ -67,5 +67,27 @@ print("Type is {} \t value is {}".format(type(a_tuple), a_tuple))
 c_string = "Shakir Gooty"
 c_list = list(a_string)
 print("Type is {} \t value is {}".format(type(c_list), c_list))
-c_list.append(list("Muzna Kammur"))
+c_list.append(list("Love of my life - wife"))
 print("Type is {} \t value is {}".format(type(c_list), c_list))
+
+# Convert to Binary Number
+a_int = 100
+a_binary = bin(100)
+print("Type is {} \t value is {}".format(type(a_binary), a_binary))
+
+# Convert Binary to Decimal Numbers
+b_binary = '1100100'
+b_int = int(b_binary,2)
+print("Type is {} \t value is {}".format(type(b_int), b_int))
+
+
+# Convert to Octal  Number
+a_int = 100
+a_oct = oct(100)
+print("Type is {} \t value is {}".format(type(a_oct), a_oct))
+
+# Convert Octal to Decimal Numbers
+b_oct = '144'
+b_int = int(b_oct,8)
+print("Type is {} \t value is {}".format(type(b_int), b_int))
+
