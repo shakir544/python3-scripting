@@ -1,15 +1,14 @@
 # Python program to find the symmentric diference betweens sets
-#the term symmetric difference indicates those values that exist in either  or  but do not exist in both.
+#  The term symmetric difference indicates those values
+#  that exist in either  or  but do not exist in both.
 
 
-def symmentric(set_a, set_b):
-    return (set_a-set_b).union(set_b -set_a)
+def symmentric(seta, setb):
+    return seta.symmetric_difference(setb)
 
 
-if __name__ == '__main___':
-    N = int(input())
-    N_set = set(map(int,input().split()))
-    M = int(input())
-    M_set = set(map(int,input().split()))
-    symmentric(N_set,M_set)
-
+if __name__ == '__main__':
+    a, b = [map(int, input().split()) for _ in range(4)][1::2]
+    sortedset = sorted(symmentric(set(a),set(b)),key=None,reverse=False)
+    for item in sortedset:
+        print(item)
